@@ -15,7 +15,7 @@ struct Cliente {
     printf ("\nDigite o nome: ");
     scanf ("%s", nome);
     printf ("\nQual o Sexo? ");
-    scanf("%s", &sexo);
+    scanf("%s", sexo);
     }
     void imprimir(){
     printf ("\n_______________________________________");
