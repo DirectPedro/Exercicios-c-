@@ -4,23 +4,25 @@
 
 struct Cliente {
 
-    char nome[100], sexo[1];
+    char nome[100];
+    char sexo;
 
     Cliente()
     {
      strcpy (nome, " ");
-     strcpy (sexo, " ");
     }
     void ler(){
     printf ("\nDigite o nome: ");
+    fflush(stdin);
     scanf ("%s", nome);
+    fflush(stdin);
     printf ("\nQual o Sexo? ");
-    scanf("%s", sexo);
+    scanf("%c", sexo);
     }
     void imprimir(){
     printf ("\n_______________________________________");
     printf ("\nNome: %s", nome);
-    printf ("\nSexo: %s", sexo);
+    printf ("\nSexo: %c", sexo);
     }
 };
 
